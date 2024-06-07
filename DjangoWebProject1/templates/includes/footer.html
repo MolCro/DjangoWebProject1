@@ -1,0 +1,34 @@
+<footer id="footer">
+
+    <div class="inner">
+ 
+        <section>
+            <h2>Оставлись вопросы? Свяжитесь с нами</h2>
+            <h2>Заполните форму или свяжитесь с нами через контактные данные </h2>
+            <h3>Форма: </h3>
+            <form  method="post" action="{% url 'users:feedback_processing'%}">
+                {% csrf_token %}
+                <div class="fields">
+                    <div class="field">
+                        <input type="text" name="feedback_name" id="feedback_name" placeholder="Имя" />
+                    </div>
+                    <div class="field">
+                        <input type="email" name="feedback_email" id="feedback_email" placeholder="Почта" />
+                    </div>
+                    <div class="field">
+                        <textarea name="feedback_message" id="feedback_message" placeholder="Сообщение"></textarea>
+                    </div>
+                </div>
+                <ul  class="actions" >
+                    <li><input type="submit" value="Отправить" class="primary" style="background-color:purple;" /></li>
+                </ul>
+            </form>
+            <h3>КОНТАКТЫ:</h3>
+            <h6>Телефон:+7(6345)-45-24-75 </h6>
+            <h6>Адресс почты:pcshop@gmail.com </h6>
+            <h6>Адрес: 355000, г.Ставрополь, ул. Тухочевского, 73</h6>
+
+        </section>
+
+    </div>
+</footer>

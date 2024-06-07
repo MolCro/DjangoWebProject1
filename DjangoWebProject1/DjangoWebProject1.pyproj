@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <Name>DjangoWebProject1</Name>
+    <RootNamespace>DjangoWebProject1</RootNamespace>
+    <InterpreterId>MSBuild|env|$(MSBuildProjectFullPath)</InterpreterId>
+    <TestFramework>Pytest</TestFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>777094e6-38b5-48d1-9431-417519d0e031</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <ProjectTypeGuids>{5F0BE9CA-D677-4A4D-8806-6076C0FAAD37};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <StartupFile>manage.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <WebBrowserUrl>http://localhost</WebBrowserUrl>
+    <LaunchProvider>Django launcher</LaunchProvider>
+    <DjangoSettingsModule>DjangoWebProject1.settings</DjangoSettingsModule>
+    <OutputPath>.</OutputPath>
+    <SuppressCollectPythonCloudServiceFiles>true</SuppressCollectPythonCloudServiceFiles>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="about\apps.py" />
+    <Compile Include="about\migrations\__init__.py" />
+    <Compile Include="about\urls.py" />
+    <Compile Include="about\views.py" />
+    <Compile Include="about\__init__.py" />
+    <Compile Include="cart\admin.py" />
+    <Compile Include="cart\apps.py" />
+    <Compile Include="cart\migrations\0001_initial.py" />
+    <Compile Include="cart\migrations\0002_initial.py" />
+    <Compile Include="cart\migrations\__init__.py" />
+    <Compile Include="cart\models.py" />
+    <Compile Include="cart\urls.py" />
+    <Compile Include="cart\views.py" />
+    <Compile Include="cart\__init__.py" />
+    <Compile Include="checkout\admin.py" />
+    <Compile Include="checkout\apps.py" />
+    <Compile Include="checkout\forms.py" />
+    <Compile Include="checkout\migrations\0001_initial.py" />
+    <Compile Include="checkout\migrations\0002_initial.py" />
+    <Compile Include="checkout\migrations\__init__.py" />
+    <Compile Include="checkout\models.py" />
+    <Compile Include="checkout\urls.py" />
+    <Compile Include="checkout\views.py" />
+    <Compile Include="checkout\__init__.py" />
+    <Compile Include="DjangoWebProject1\asgi.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="manage.py" />
+    <Compile Include="DjangoWebProject1\__init__.py" />
+    <Compile Include="DjangoWebProject1\settings.py" />
+    <Compile Include="DjangoWebProject1\urls.py" />
+    <Compile Include="DjangoWebProject1\wsgi.py" />
+    <Compile Include="store\admin.py" />
+    <Compile Include="store\apps.py" />
+    <Compile Include="store\migrations\0001_initial.py" />
+    <Compile Include="store\migrations\__init__.py" />
+    <Compile Include="store\models.py" />
+    <Compile Include="store\paginator.py" />
+    <Compile Include="store\urls.py" />
+    <Compile Include="store\views.py" />
+    <Compile Include="store\__init__.py" />
+    <Compile Include="users\admin.py" />
+    <Compile Include="users\apps.py" />
+    <Compile Include="users\forms.py" />
+    <Compile Include="users\migrations\0001_initial.py" />
+    <Compile Include="users\migrations\__init__.py" />
+    <Compile Include="users\models.py" />
+    <Compile Include="users\urls.py" />
+    <Compile Include="users\views.py" />
+    <Compile Include="users\__init__.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="about\" />
+    <Folder Include="about\migrations\" />
+    <Folder Include="about\__pycache__\" />
+    <Folder Include="cart\migrations\" />
+    <Folder Include="checkout\migrations\" />
+    <Folder Include="DjangoWebProject1\" />
+    <Folder Include="cart\" />
+    <Folder Include="checkout\" />
+    <Folder Include="media\" />
+    <Folder Include="media\categories\" />
+    <Folder Include="media\items\" />
+    <Folder Include="static\" />
+    <Folder Include="static\admin\" />
+    <Folder Include="static\admin\css\" />
+    <Folder Include="static\admin\css\vendor\" />
+    <Folder Include="static\admin\css\vendor\select2\" />
+    <Folder Include="static\admin\fonts\" />
+    <Folder Include="static\admin\img\" />
+    <Folder Include="static\admin\img\gis\" />
+    <Folder Include="static\admin\js\" />
+    <Folder Include="static\admin\js\admin\" />
+    <Folder Include="static\admin\js\vendor\" />
+    <Folder Include="static\admin\js\vendor\jquery\" />
+    <Folder Include="static\admin\js\vendor\select2\" />
+    <Folder Include="static\admin\js\vendor\select2\i18n\" />
+    <Folder Include="static\admin\js\vendor\xregexp\" />
+    <Folder Include="static\assets\" />
+    <Folder Include="static\assets\css\" />
+    <Folder Include="static\assets\js\" />
+    <Folder Include="static\assets\sass\" />
+    <Folder Include="static\assets\sass\base\" />
+    <Folder Include="static\assets\sass\components\" />
+    <Folder Include="static\assets\sass\layout\" />
+    <Folder Include="static\assets\sass\libs\" />
+    <Folder Include="static\assets\webfonts\" />
+    <Folder Include="static\images\" />
+    <Folder Include="store\" />
+    <Folder Include="store\migrations\" />
+    <Folder Include="templates\" />
+    <Folder Include="templates\cart\" />
+    <Folder Include="templates\checkout\" />
+    <Folder Include="templates\includes\" />
+    <Folder Include="templates\store\" />
+    <Folder Include="templates\users\" />
+    <Folder Include="templates\users\managment\" />
+    <Folder Include="users\" />
+    <Folder Include="users\migrations\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="about\__pycache__\urls.cpython-311.pyc" />
+    <Content Include="about\__pycache__\urls.cpython-37.pyc" />
+    <Content Include="about\__pycache__\views.cpython-311.pyc" />
+    <Content Include="about\__pycache__\views.cpython-37.pyc" />
+    <Content Include="about\__pycache__\__init__.cpython-311.pyc" />
+    <Content Include="about\__pycache__\__init__.cpython-37.pyc" />
+    <Content Include="data.json" />
+    <Content Include="media\categories\hdd.png" />
+    <Content Include="media\categories\hdd_5BMUygz.png" />
+    <Content Include="media\categories\main.png" />
+    <Content Include="media\categories\main_Jx9yFpB.png" />
+    <Content Include="media\categories\mon.png" />
+    <Content Include="media\categories\mon_0QDNKB2.png" />
+    <Content Include="media\categories\mon_gkZSBgh.png" />
+    <Content Include="media\categories\motherboard.png" />
+    <Content Include="media\categories\motherboard_BrD0Hpu.png" />
+    <Content Include="media\categories\ozu.png" />
+    <Content Include="media\categories\ozu_qPZJANy.png" />
+    <Content Include="media\categories\power.png" />
+    <Content Include="media\categories\power_Mkdcz4k.png" />
+    <Content Include="media\categories\power_Mkdcz4k_HI8FCE8.png" />
+    <Content Include="media\categories\proc.png" />
+    <Content Include="media\categories\proc_5hyzo78.png" />
+    <Content Include="media\categories\ssd.png" />
+    <Content Include="media\categories\ssd_Vvcwwm0.png" />
+    <Content Include="media\categories\V.png" />
+    <Content Include="media\categories\vid.png" />
+    <Content Include="media\categories\vid_kpL5fSH.png" />
+    <Content Include="media\categories\V_rSpXCIL.png" />
+    <Content Include="media\items\hdd1.png" />
+    <Content Include="media\items\hdd1_xwIVOFV.png" />
+    <Content Include="media\items\hdd2.png" />
+    <Content Include="media\items\hdd2_HJdJlHC.png" />
+    <Content Include="media\items\main1.png" />
+    <Content Include="media\items\main1_RXB4yiX.png" />
+    <Content Include="media\items\main2.png" />
+    <Content Include="media\items\main2_bqGORJF.png" />
+    <Content Include="media\items\mb1.png" />
+    <Content Include="media\items\mb2.png" />
+    <Content Include="media\items\mb2_FqDIiG4.png" />
+    <Content Include="media\items\mb3.png" />
+    <Content Include="media\items\mb3_5GbZxlc.png" />
+    <Content Include="media\items\mb4.png" />
+    <Content Include="media\items\mb4_N2OT93t.png" />
+    <Content Include="media\items\mon1.png" />
+    <Content Include="media\items\mon1_CSWk8Us.png" />
+    <Content Include="media\items\mon2.png" />
+    <Content Include="media\items\mon2_4EfDcjj.png" />
+    <Content Include="media\items\ozu1.png" />
+    <Content Include="media\items\ozu1_OsTjhz4.png" />
+    <Content Include="media\items\ozu2.png" />
+    <Content Include="media\items\ozu2_5e0iAHg.png" />
+    <Content Include="media\items\ozu3.png" />
+    <Content Include="media\items\ozu3_8KtJDGm.png" />
+    <Content Include="media\items\power1.png" />
+    <Content Include="media\items\power1_iZKEt7c.png" />
+    <Content Include="media\items\power2.png" />
+    <Content Include="media\items\power2_7NRuQ3U.png" />
+    <Content Include="media\items\power3.png" />
+    <Content Include="media\items\power3_X74IvTI.png" />
+    <Content Include="media\items\proc1.png" />
+    <Content Include="media\items\proc1_4VMGB41.png" />
+    <Content Include="media\items\proc2.png" />
+    <Content Include="media\items\proc2_s9yaz2I.png" />
+    <Content Include="media\items\proc3.png" />
+    <Content Include="media\items\ssd1.png" />
+    <Content Include="media\items\ssd1_7v0NZPx.png" />
+    <Content Include="media\items\ssd2.png" />
+    <Content Include="media\items\ssd2_djwi1ZD.png" />
+    <Content Include="media\items\v1.png" />
+    <Content Include="media\items\v1_w3D2Sr6.png" />
+    <Content Include="media\items\v2.png" />
+    <Content Include="media\items\v2_ZC7GDoF.png" />
+    <Content Include="media\items\v3.png" />
+    <Content Include="media\items\v3_aMETaM2.png" />
+    <Content Include="media\items\Vid1.png" />
+    <Content Include="media\items\Vid1_Ol9FqZ2.png" />
+    <Content Include="media\items\Vid2.png" />
+    <Content Include="media\items\Vid2_p02O1f3.png" />
+    <Content Include="media\items\Vid3.png" />
+    <Content Include="media\items\Vid3_Ut8Z7qM.png" />
+    <Content Include="media\items\Vid4.png" />
+    <Content Include="media\items\Vid4_pZfOQl7.png" />
+    <Content Include="media\items\Vid5.png" />
+    <Content Include="media\items\Vid5_lZcq1JL.png" />
+    <Content Include="media\items\Vid6.png" />
+    <Content Include="media\items\Vid6_EXr7KA9.png" />
+    <Content Include="requirements.txt" />
+    <Content Include="db.sqlite3" />
+    <Content Include="static\admin\css\autocomplete.css" />
+    <Content Include="static\admin\css\base.css" />
+    <Content Include="static\admin\css\changelists.css" />
+    <Content Include="static\admin\css\dashboard.css" />
+    <Content Include="static\admin\css\fonts.css" />
+    <Content Include="static\admin\css\forms.css" />
+    <Content Include="static\admin\css\login.css" />
+    <Content Include="static\admin\css\nav_sidebar.css" />
+    <Content Include="static\admin\css\responsive.css" />
+    <Content Include="static\admin\css\responsive_rtl.css" />
+    <Content Include="static\admin\css\rtl.css" />
+    <Content Include="static\admin\css\vendor\select2\LICENSE-SELECT2.md" />
+    <Content Include="static\admin\css\vendor\select2\select2.css" />
+    <Content Include="static\admin\css\vendor\select2\select2.min.css" />
+    <Content Include="static\admin\css\widgets.css" />
+    <Content Include="static\admin\fonts\LICENSE.txt" />
+    <Content Include="static\admin\fonts\README.txt" />
+    <Content Include="static\admin\fonts\Roboto-Bold-webfont.woff" />
+    <Content Include="static\admin\fonts\Roboto-Light-webfont.woff" />
+    <Content Include="static\admin\fonts\Roboto-Regular-webfont.woff" />
+    <Content Include="static\admin\img\calendar-icons.svg" />
+    <Content Include="static\admin\img\gis\move_vertex_off.svg" />
+    <Content Include="static\admin\img\gis\move_vertex_on.svg" />
+    <Content Include="static\admin\img\icon-addlink.svg" />
+    <Content Include="static\admin\img\icon-alert.svg" />
+    <Content Include="static\admin\img\icon-calendar.svg" />
+    <Content Include="static\admin\img\icon-changelink.svg" />
+    <Content Include="static\admin\img\icon-clock.svg" />
+    <Content Include="static\admin\img\icon-deletelink.svg" />
+    <Content Include="static\admin\img\icon-no.svg" />
+    <Content Include="static\admin\img\icon-unknown-alt.svg" />
+    <Content Include="static\admin\img\icon-unknown.svg" />
+    <Content Include="static\admin\img\icon-viewlink.svg" />
+    <Content Include="static\admin\img\icon-yes.svg" />
+    <Content Include="static\admin\img\inline-delete.svg" />
+    <Content Include="static\admin\img\LICENSE" />
+    <Content Include="static\admin\img\README.txt" />
+    <Content Include="static\admin\img\search.svg" />
+    <Content Include="static\admin\img\selector-icons.svg" />
+    <Content Include="static\admin\img\sorting-icons.svg" />
+    <Content Include="static\admin\img\tooltag-add.svg" />
+    <Content Include="static\admin\img\tooltag-arrowright.svg" />
+    <Content Include="static\admin\js\actions.js" />
+    <Content Include="static\admin\js\admin\DateTimeShortcuts.js" />
+    <Content Include="static\admin\js\admin\RelatedObjectLookups.js" />
+    <Content Include="static\admin\js\autocomplete.js" />
+    <Content Include="static\admin\js\calendar.js" />
+    <Content Include="static\admin\js\cancel.js" />
+    <Content Include="static\admin\js\change_form.js" />
+    <Content Include="static\admin\js\collapse.js" />
+    <Content Include="static\admin\js\core.js" />
+    <Content Include="static\admin\js\inlines.js" />
+    <Content Include="static\admin\js\jquery.init.js" />
+    <Content Include="static\admin\js\nav_sidebar.js" />
+    <Content Include="static\admin\js\popup_response.js" />
+    <Content Include="static\admin\js\prepopulate.js" />
+    <Content Include="static\admin\js\prepopulate_init.js" />
+    <Content Include="static\admin\js\SelectBox.js" />
+    <Content Include="static\admin\js\SelectFilter2.js" />
+    <Content Include="static\admin\js\urlify.js" />
+    <Content Include="static\admin\js\vendor\jquery\jquery.js" />
+    <Content Include="static\admin\js\vendor\jquery\jquery.min.js" />
+    <Content Include="static\admin\js\vendor\jquery\LICENSE.txt" />
+    <Content Include="static\admin\js\vendor\select2\i18n\af.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\ar.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\az.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\bg.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\bn.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\bs.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\ca.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\cs.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\da.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\de.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\dsb.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\el.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\en.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\es.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\et.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\eu.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\fa.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\fi.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\fr.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\gl.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\he.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\hi.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\hr.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\hsb.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\hu.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\hy.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\id.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\is.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\it.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\ja.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\ka.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\km.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\ko.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\lt.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\lv.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\mk.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\ms.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\nb.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\ne.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\nl.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\pl.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\ps.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\pt-BR.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\pt.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\ro.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\ru.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\sk.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\sl.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\sq.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\sr-Cyrl.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\sr.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\sv.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\th.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\tk.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\tr.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\uk.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\vi.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\zh-CN.js" />
+    <Content Include="static\admin\js\vendor\select2\i18n\zh-TW.js" />
+    <Content Include="static\admin\js\vendor\select2\LICENSE.md" />
+    <Content Include="static\admin\js\vendor\select2\select2.full.js" />
+    <Content Include="static\admin\js\vendor\select2\select2.full.min.js" />
+    <Content Include="static\admin\js\vendor\xregexp\LICENSE.txt" />
+    <Content Include="static\admin\js\vendor\xregexp\xregexp.js" />
+    <Content Include="static\admin\js\vendor\xregexp\xregexp.min.js" />
+    <Content Include="static\assets\css\cart.css" />
+    <Content Include="static\assets\css\checkout.css" />
+    <Content Include="static\assets\css\fontawesome-all.min.css" />
+    <Content Include="static\assets\css\item_details.css" />
+    <Content Include="static\assets\css\main.css" />
+    <Content Include="static\assets\css\noscript.css" />
+    <Content Include="static\assets\css\profile.css" />
+    <Content Include="static\assets\css\users.css" />
+    <Content Include="static\assets\js\ajax.js" />
+    <Content Include="static\assets\js\breakpoints.min.js" />
+    <Content Include="static\assets\js\browser.min.js" />
+    <Content Include="static\assets\js\cart.js" />
+    <Content Include="static\assets\js\checkout.js" />
+    <Content Include="static\assets\js\jquery.min.js" />
+    <Content Include="static\assets\js\main.js" />
+    <Content Include="static\assets\js\payment.js" />
+    <Content Include="static\assets\js\util.js" />
+    <Content Include="static\assets\sass\base\_page.scss" />
+    <Content Include="static\assets\sass\base\_reset.scss" />
+    <Content Include="static\assets\sass\base\_typography.scss" />
+    <Content Include="static\assets\sass\components\_actions.scss" />
+    <Content Include="static\assets\sass\components\_box.scss" />
+    <Content Include="static\assets\sass\components\_button.scss" />
+    <Content Include="static\assets\sass\components\_form.scss" />
+    <Content Include="static\assets\sass\components\_icon.scss" />
+    <Content Include="static\assets\sass\components\_icons.scss" />
+    <Content Include="static\assets\sass\components\_image.scss" />
+    <Content Include="static\assets\sass\components\_list.scss" />
+    <Content Include="static\assets\sass\components\_row.scss" />
+    <Content Include="static\assets\sass\components\_section.scss" />
+    <Content Include="static\assets\sass\components\_table.scss" />
+    <Content Include="static\assets\sass\components\_tiles.scss" />
+    <Content Include="static\assets\sass\layout\_footer.scss" />
+    <Content Include="static\assets\sass\layout\_header.scss" />
+    <Content Include="static\assets\sass\layout\_main.scss" />
+    <Content Include="static\assets\sass\layout\_menu.scss" />
+    <Content Include="static\assets\sass\layout\_wrapper.scss" />
+    <Content Include="static\assets\sass\libs\_breakpoints.scss" />
+    <Content Include="static\assets\sass\libs\_functions.scss" />
+    <Content Include="static\assets\sass\libs\_html-grid.scss" />
+    <Content Include="static\assets\sass\libs\_mixins.scss" />
+    <Content Include="static\assets\sass\libs\_vars.scss" />
+    <Content Include="static\assets\sass\libs\_vendor.scss" />
+    <Content Include="static\assets\sass\main.scss" />
+    <Content Include="static\assets\sass\noscript.scss" />
+    <Content Include="static\assets\webfonts\fa-brands-400.eot" />
+    <Content Include="static\assets\webfonts\fa-brands-400.svg" />
+    <Content Include="static\assets\webfonts\fa-brands-400.ttf" />
+    <Content Include="static\assets\webfonts\fa-brands-400.woff" />
+    <Content Include="static\assets\webfonts\fa-brands-400.woff2" />
+    <Content Include="static\assets\webfonts\fa-regular-400.eot" />
+    <Content Include="static\assets\webfonts\fa-regular-400.svg" />
+    <Content Include="static\assets\webfonts\fa-regular-400.ttf" />
+    <Content Include="static\assets\webfonts\fa-regular-400.woff" />
+    <Content Include="static\assets\webfonts\fa-regular-400.woff2" />
+    <Content Include="static\assets\webfonts\fa-solid-900.eot" />
+    <Content Include="static\assets\webfonts\fa-solid-900.svg" />
+    <Content Include="static\assets\webfonts\fa-solid-900.ttf" />
+    <Content Include="static\assets\webfonts\fa-solid-900.woff" />
+    <Content Include="static\assets\webfonts\fa-solid-900.woff2" />
+    <Content Include="static\images\cart.jpg" />
+    <Content Include="static\images\garbage.svg" />
+    <Content Include="static\images\logo.svg" />
+    <Content Include="static\images\pic01.jpg" />
+    <Content Include="static\images\pic14.jpg" />
+    <Content Include="static\images\profile.png" />
+    <Content Include="templates\base.html" />
+    <Content Include="templates\cart\cart.html" />
+    <Content Include="templates\checkout\checkout.html" />
+    <Content Include="templates\checkout\popup.html" />
+    <Content Include="templates\checkout\thank_you.html" />
+    <Content Include="templates\includes\footer.html" />
+    <Content Include="templates\includes\header.html" />
+    <Content Include="templates\includes\paginator.html" />
+    <Content Include="templates\store\item_details.html" />
+    <Content Include="templates\store\main_page.html" />
+    <Content Include="templates\store\tag_details.html" />
+    <Content Include="templates\store\tag_list.html" />
+    <Content Include="templates\users\feedback_failed.html" />
+    <Content Include="templates\users\feedback_success.html" />
+    <Content Include="templates\users\logged_out.html" />
+    <Content Include="templates\users\login.html" />
+    <Content Include="templates\users\managment\password_change_done.html" />
+    <Content Include="templates\users\managment\password_change_form.html" />
+    <Content Include="templates\users\managment\password_reset_complete.html" />
+    <Content Include="templates\users\managment\password_reset_confirm.html" />
+    <Content Include="templates\users\managment\password_reset_done.html" />
+    <Content Include="templates\users\managment\password_reset_email.html" />
+    <Content Include="templates\users\managment\password_reset_form.html" />
+    <Content Include="templates\users\managment\reset_done.html" />
+    <Content Include="templates\users\profile.html" />
+    <Content Include="templates\users\signup.html" />
+    <Content Include="templates\users\user_orders.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="readme.html">
+      <SubType>WebBrowser</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include="env\">
+      <Id>env</Id>
+      <Version>3.7</Version>
+      <Description>env (Python 3.7 (64-bit))</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X64</Architecture>
+    </Interpreter>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Django.targets" />
+  <!-- Specify pre- and post-build commands in the BeforeBuild and 
+       AfterBuild targets below. -->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <AutoAssignPort>True</AutoAssignPort>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

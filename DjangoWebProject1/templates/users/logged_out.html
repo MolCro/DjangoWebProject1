@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<style>
+    body {
+        background: #00ffff;
+        color: #ff006e;
+    }
+    </style>
+  <h1>Вы успешно вышли из системы</h1>
+  <p>Вернуться на <a href="{% url 'users:login' %}">страницу входа</a>.</p>
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<style>
+    body {
+        background: #00ffff;
+        color: #ff006e;
+    }
+    </style>
+<h1>Ваш профиль</h1>
+<p>Добро пожаловать, {{ request.user.get_username }}. Всего у вас <strong>{{ request.user.orders.count }}</strong> заказов.</p>
+<p>Ваши заказы: <a href="{% url 'users:user_orders' %}">Перейти к заказам</a></p>
+<p>Выход из системы: <a href="{% url 'users:logout' %}">Выйти</a></p>
+<p>Смена пароля: <a href="{% url 'users:password_change' %}">Сменить пароль</a></p>
+{% endblock %}
